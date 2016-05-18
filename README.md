@@ -22,6 +22,6 @@ This was completed in May 2015 by the way. I recently set this up locally with a
 
 ![](https://github.com/slayrbear/CameraEmporium/blob/master/ScreenShots/Camera_Selection.png?raw=true)
 
-![](https://github.com/slayrbear/CameraEmporium/blob/master/ScreenShots/Vart.png?raw=true)
+![](https://github.com/slayrbear/CameraEmporium/blob/master/ScreenShots/Cart.png?raw=true)
 
 ![](https://github.com/slayrbear/CameraEmporium/blob/master/ScreenShots/Checkout.png?raw=true)
