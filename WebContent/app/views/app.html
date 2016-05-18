@@ -1,0 +1,25 @@
+
+<div id="mainCart">
+	<button ng-click="showCart()"><i class="fa fa-shopping-cart fa-2x"></i> Cart ({{ cart.length }})</button>
+</div>
+<br>
+<div>
+	<div id="mainProducts" ng-cloak>
+		<div id="search">
+			<input id="searchBox" ng-model="searchQuery[queryBy]" class="u-full-width" placeholder="Search Cameras...."/>
+		</div>
+		<div id="product" ng-repeat="product in products | filter:searchQuery">
+			<a ng-href="#/product?sku={{ product.sku }}">
+				<img id="productImg" ng-src="productimages/{{ product.image }}" />
+			</a>
+			<br>
+			<b>{{ product.vendorModel }}</b><br>
+			{{ product.name }} <br>
+			{{ product.categoryName}} <br>
+			${{ product.retail }} <br>
+		</div>
+	</div>
+</div>
+
+
+

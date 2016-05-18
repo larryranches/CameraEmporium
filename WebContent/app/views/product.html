@@ -1,0 +1,44 @@
+<div id="productPage">
+	<div id="mainCart">
+		<button ng-click="showCart()"><i class="fa fa-shopping-cart fa-2x"></i> Cart ({{ cart.length }})</button>
+	</div>
+	<div id="image">
+		<img id="productImg" ng-src="productimages/{{ product[0].image }}" />
+		<br>
+		<div id="priceAdd" ng-show="isInStock">
+
+			<span id="price"><i class="fa fa-usd"></i>{{ product[0].retail }}</span> <br>
+			<form>
+				<div id="inStockQty">
+					{{ onHandQty }} items in stock
+				</div>
+				<br>
+				<div id="qtyError" ng-show="showQtyError">
+					We don't have enough in stock. Please reduce quantity.<br>
+				</div>
+				<br>
+				<div ng-show="!itemAdded">
+					Qty: <input type="number" min="1" ng-model="qty" required />
+					<button id="btnAddItem" class="button-primary" ng-click="addItem()">Add to Cart</button>
+				</div>
+				<div ng-show="itemAdded">
+					<button id="btnAddItem" class="">Item Added to Cart <i class="fa fa-check"></i></button>
+				</div>
+			</form>
+		</div>
+		<div id="notInStock" ng-show="!isInStock">
+			Item currently out of stock! <br>
+			Check Back Soon <i class="fa fa-smile-o"></i>
+		</div>
+	</div>
+	<div>
+		<a href="#/"> <i class="fa fa-arrow-left"></i> Back to Cameras</a>
+	</div>
+	<div id="productContent">
+		<h3>{{ product[0].name }} {{ product[0].vendorModel }}</h3>
+		<h5>Description</h5>
+		{{ product[0].description }} <br> <br>
+		<h5>Features</h5>
+		{{ product[0].features }} <br>
+	</div>
+</div>

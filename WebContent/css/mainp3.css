@@ -1,0 +1,331 @@
+/*      Ranches, Larry    Account:  jadrn030
+        CS645, Spring 2015
+        Project #3
+*/
+html {
+	background-color: #FFF;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	width: 850px;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	/*color: #333;*/
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	padding: 15px 10px 15px 10px;
+	position: relative;
+}
+
+.sdsuimg {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+#container {
+	min-height: 100%;
+	min-width: 600px;
+	height: auto;
+	width: auto;
+	/*border-left: solid 1px #DDD;*/
+	/*border-right: solid 1px #DDD;*/
+	background-color: #FFF;
+	margin: 0% 5% 0% 5%;
+	padding: 20px 5px 20px 20px;
+}
+
+#content {
+	height: 80%;
+	font-size: 12px;
+}
+
+.nav {
+	width: 850px;
+	font-family: 'Lobster', Helvetica, sans-serif;
+	font-weight: bolder;
+	font-size: 45px;
+	text-align: left;
+	text-decoration: none;
+	color: #D2C694;
+	background-color: #686868;
+	/*border-bottom: 1px solid #888;*/
+	line-height: 70px;
+	text-shadow: 0 0 .em #D2C694;
+}
+
+.nav ul {
+	list-style: none;
+	background-color: #000;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav li {
+	font-size: 1.2em;
+	line-height: 28px;
+	height: 28px;
+	/*border-bottom: 1px solid #888;*/
+}
+
+.nav a {
+	font-size: 45px;
+	line-height: 70px;
+	text-decoration: none;
+	color: #D2C694;
+	display: block;
+	transition: .3s;
+}
+
+.nav a.sdsu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #D2C694;
+	background-color: #000;
+	border-bottom: 1px solid #888;
+}
+
+.nav a:hover {
+	color: #fff;
+	background-color: #A81933;
+}
+
+.nav a.active {
+	background-color: #fff;
+	color: #444;
+	cursor: default;
+}
+
+li {
+	padding-top: 10px;
+}
+
+#logout {
+	width: 100%;
+	text-align: right;
+	font-size: 12px;
+}
+
+#logout a {
+	font-size: 12px;
+}
+
+#logout a:link {
+	text-decoration: none;
+}
+
+#logout a:visited {
+	text-decoration: none;
+}
+
+#logout a:hover {
+	text-decoration: underline;
+}
+
+#logout a:active {
+	text-decoration: underline;
+}
+
+#r_errormsg {
+	text-align: center;
+}
+
+#r_enterSKU {
+	text-align: center;
+}
+
+#r_enterSKU #r_sku {
+	width: 500px;
+	height: 60px;
+	font-size: 50px;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #F0F0F0;
+}
+
+.validSku {
+	color: green;
+	font-weight: bold;
+}
+
+#logBack {
+	width: 350px;
+	height: 70px;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	background-color: green;
+	border-radius: 5px;
+}
+
+#logBackDiv {
+	text-align: center;
+}
+
+/* MEDIA */
+@media screen and (min-width: 800px) {
+	#container {
+		height: auto;
+		background-color: #FFF;
+		margin: 0% 10% 0% 10%;
+		padding: 20px 20px 20px 20px;
+		/*border: 1px solid #CCC;*/
+	}
+	.nav {
+		width: auto;
+	}
+}
+
+/* PROJECT 3 BELOW */
+#main {
+
+}
+
+#mainCart {
+	text-align: right;
+}
+
+
+#mainProducts {
+	width: 100%;
+	padding-left: 50px;
+}
+
+#mainProducts  #search {
+	width: 90%;
+	padding: 10px;
+	text-align: center;
+}
+
+#mainProducts  #search #searchBox {
+	height: 50px;
+	font-size: 30px;
+}
+
+#mainProducts #product #productImg {
+	padding: 25px;
+	height: auto;
+	width: auto;
+	max-width: 150px;
+	max-height: 150px;
+}
+
+#mainProducts #product {
+	text-align: center;
+	float: left;
+}
+
+#productPage {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+#productPage #productContent{
+	float: left;
+	padding-top: 30px;
+	width: 50%;
+}
+
+#productPage #image{
+	float: right;
+}
+
+#productPage #image #priceAdd{
+	text-align: right;
+}
+
+#productPage #image #priceAdd #price{
+	padding: 5px;
+	color: green;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#cartListing  {
+	text-align: center;
+}
+
+#cartListing #cartList {
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#emptyCart{
+	text-align: center;
+}
+
+#cartList {
+	width: 80%;
+}
+
+#tblCartList {
+	width: 100%;
+}
+
+
+#tblCartList #productImg {
+	height: auto;
+	width: auto;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+#totals{
+	text-align: right;
+}
+
+#totalAmount{
+	font-size: 40px;
+	font-weight: bold;
+	color: green;
+}
+
+#checkout {
+	width: 100%;
+}
+
+#checkout h2{
+	text-align: center;
+}
+
+#notInStock {
+	text-align: center;
+	font-weight: bold;
+	color: red;
+	font-size: 20px;
+}
+
+#inStockQty {
+	color: grey;
+	font-size: 18px;
+}
+
+#qtyError {
+	color: red;
+	font-size: 14px;
+}
+
+#confirmation{
+	text-align: center;
+}
+
+
+
+
+
